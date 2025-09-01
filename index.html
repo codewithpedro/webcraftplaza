@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCraft Plaza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css-styles/main.css">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <header class="bg-yellow-400 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">WebCraft Plaza</div>
+            <ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="#services" class="text-gray-800 hover:text-teal-600 transition-colors duration-300 ease-in-out">Services</a></li>
+                <li><a href="#work" class="text-gray-800 hover:text-teal-600 transition-colors duration-300 ease-in-out">Our Work</a></li>
+                <li><a href="#about" class="text-gray-800 hover:text-teal-600 transition-colors duration-300 ease-in-out">About</a></li>
+                <li><a href="#testimonials" class="text-gray-800 hover:text-teal-600 transition-colors duration-300 ease-in-out">Testimonials</a></li>
+            </ul>
+            <a href="#contact">
+            <button class="hidden md:block bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 transition-all duration-300 ease-in-out transform hover:scale-105">Let's Talk</button>
+            </a>
+            <button id="mobile-menu-button" class="md:hidden text-gray-800">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <li><a href="#services" class="block text-gray-800 hover:text-teal-600 px-3 py-2 rounded-md transition-colors duration-300 ease-in-out">Services</a></li>
+                <li><a href="#work" class="block text-gray-800 hover:text-teal-600 px-3 py-2 rounded-md transition-colors duration-300 ease-in-out">Our Work</a></li>
+                <li><a href="#about" class="block text-gray-800 hover:text-teal-600 px-3 py-2 rounded-md transition-colors duration-300 ease-in-out">About</a></li>
+                <li><a href="#testimonials" class="block text-gray-800 hover:text-teal-600 px-3 py-2 rounded-md transition-colors duration-300 ease-in-out">Testimonials</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="bg-yellow-400 flex items-center">
+            <div class="grid md:grid-cols-4 items-center">
+                <div class="hero-text container text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-800 leading-tight">Custom Software Tailored for Your <span class="text-teal-600">UNIQUE</span> Needs</h1>
+                    <p class="mt-4 text-lg text-gray-700">Turn your vision into reality.</p>
+                    <ul class="mt-6 space-y-2 text-left inline-block">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-teal-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Websites</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-teal-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>AI Automation</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-teal-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Graphic Design</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-teal-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Marketing</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-teal-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>SAS Businesses</li>
+                    </ul>
+                </div>
+                <div class="hero-img">
+                    <img src="assets/images/hero.jpg" alt="Hero Image" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">What We Help With</h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mb-10">As a versatile business consultant, I provide a wide range of creative solutions tailored to your needs:</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                        <img src="assets/images/service1.jpg" alt="Graphic Design" class="h-32 mx-auto mb-4">
+                        <h3 class="text-xl font-bold mb-2">Graphic Design</h3>
+                        <p class="text-gray-600">Branding: Logos, color palettes, and typography. Marketing Materials: Flyers, posters, business cards, and social media graphics.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                        <img src="assets/images/service2.jpg" alt="Web Design" class="h-32 mx-auto mb-4">
+                        <h3 class="text-xl font-bold mb-2">Web Design</h3>
+                        <p class="text-gray-600">Responsive Websites, E-commerce Solutions, and Portfolio Sites to showcase your work beautifully.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                        <img src="assets/images/service3.jpg" alt="Video Design" class="h-32 mx-auto mb-4">
+                        <h3 class="text-xl font-bold mb-2">Video Design</h3>
+                        <p class="text-gray-600">Promotional Videos for ads and social media. Clean and professional video edits.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                        <img src="assets/images/service4.jpg" alt="AI Automation" class="h-32 mx-auto mb-4">
+                        <h3 class="text-xl font-bold mb-2">AI Automation</h3>
+                        <p class="text-gray-600">Streamline daily tasks with smart automation solutions. Boost productivity with efficient AI integrations.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                        <img src="assets/images/service5.jpg" alt="Marketing & SEO Optimization" class="h-32 mx-auto mb-4">
+                        <h3 class="text-xl font-bold mb-2">Marketing & SEO Optimization</h3>
+                        <p class="text-gray-600">Reach ideal customers with effective marketing strategies and SEO. Drive traffic and grow your online presence.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                        <img src="assets/images/service6.jpg" alt="Social Media Presence" class="h-32 mx-auto mb-4">
+                        <h3 class="text-xl font-bold mb-2">Social Media Presence</h3>
+                        <p class="text-gray-600">Stand out online with engaging social media content. Build a loyal community and increase your brand's reach.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="py-20 bg-teal-500">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-10 text-white">Featured Work</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <img src="assets/images/work1.png" alt="Work 1" class="rounded-lg shadow-lg w-full h-auto object-cover transition-all duration-300 ease-in-out transform hover:scale-105">
+                    <img src="assets/images/work2.png" alt="Work 2" class="rounded-lg shadow-lg w-full h-auto object-cover transition-all duration-300 ease-in-out transform hover:scale-105">
+                    <img src="assets/images/work3.png" alt="Work 3" class="rounded-lg shadow-lg w-full h-auto object-cover transition-all duration-300 ease-in-out transform hover:scale-105">
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-10">Testimonials</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                        <p class="text-gray-600 italic mb-4">"WebCraft Plaza delivered a stunning website that exceeded our expectations. Their attention to detail and commitment to quality is unmatched."</p>
+                        <p class="font-bold">- John Doe, CEO of ExampleCorp</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                        <p class="text-gray-600 italic mb-4">"The AI automation solution they built for us has saved us countless hours and significantly improved our workflow. Highly recommended!"</p>
+                        <p class="font-bold">- Jane Smith, COO of Innovate LLC</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                        <p class="text-gray-600 italic mb-4">"Working with WebCraft Plaza was a breeze. They are professional, responsive, and incredibly talented. I'm thrilled with the results."</p>
+                        <p class="font-bold">- Sarah Lee, Founder of Creative Solutions</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                        <p class="text-gray-600 italic mb-4">"The team at WebCraft Plaza is top-notch. They took my vision and turned it into a beautiful, functional website that my customers love."</p>
+                        <p class="font-bold">- Michael Chen, Owner of The Modern Boutique</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-yellow-400">
+            <div class="container mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl font-bold mb-4">About WebCraft Plaza</h2>
+                    <p class="text-gray-700 mb-4">At WebCraft Plaza, we're passionate about turning your ideas into reality.</p>
+                    <p class="text-gray-700 mb-4">Whether you need a stunning website, impactful branding, or AI automation to grow your business, we're here to craft solutions tailored to you.</p>
+                    <p class="text-gray-700">Think of us as your creative and tech partner, ready to bring your vision to life with care, innovation, and purpose.</p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="assets/images/about.jpg" alt="About Us Image" class="rounded-lg shadow-2xl w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="mx-auto bg-white p-8 rounded-lg shadow-md">
+                    <iframe aria-label='Get In Touch' frameborder="0" style="height:935px;width:99%;border:none;" src='https://forms.zohopublic.com/webcraftplaza1/form/WebCraftPlazaSubmission/formperma/Nk1AfKajxG6N50YBsvowKKJwoaFUt8-OMICdImG1Txo'></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-yellow-400 py-10">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-2xl font-bold text-gray-800 mb-4">WebCraft Plaza</div>
+            <ul class="flex justify-center space-x-6 mb-4">
+                <li><a href="#services" class="text-gray-800 hover:text-teal-600">Services</a></li>
+                <li><a href="#work" class="text-gray-800 hover:text-teal-600">Our Work</a></li>
+                <li><a href="#about" class="text-gray-800 hover:text-teal-600">About</a></li>
+            </ul>
+            <a href="#contact">
+            <button class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600">Let's Talk</button>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js-tools/app.js"></script>
+</body>
+</html>
